@@ -8,11 +8,15 @@
     "@testing-library/user-event": "^7.2.1",
     "@types/jest": "^24.9.1",
     "@types/node": "^12.12.29",
-    "@types/react": "^16.9.23",
     "@types/react-dom": "^16.9.5",
+    "@types/styletron-engine-atomic": "^1.1.0",
+    "@types/styletron-react": "^5.0.2",
+    "baseui": "^9.64.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-scripts": "3.4.0",
+    "styletron-engine-atomic": "^1.4.6",
+    "styletron-react": "^5.2.7",
     "typescript": "^3.7.5"
   },
   "scripts": {
@@ -35,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.23"
   }
 }
