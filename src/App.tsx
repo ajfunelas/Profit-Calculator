@@ -6,6 +6,7 @@ import {LightTheme, BaseProvider, styled} from 'baseui';
 import { Router, Route, Switch } from "react-router-dom"
 import createHistory from "history/createBrowserHistory"
 import ReactGA from "react-ga"
+import Home from './pages/homepage';
 
 const history = createHistory()
 history.listen((location, action) => {
@@ -21,6 +22,7 @@ const Routes = () => {
 	return (
 			<Router history={history}>
 				<Switch>
+					<Route path="/" exact component={Home}/>
 				</Switch>
 			</Router>
 	)
