@@ -33,6 +33,11 @@ export const CalcCard = () => {
         color: "#4B9CD3",
     })
 
+    const titleH2: string =css({
+        fontSize: "35px",
+        color: "#4B9CD3",
+    })
+
     
     
     return (
@@ -58,7 +63,7 @@ export const CalcCard = () => {
                     }
                 }} 
                 onClick={() => alert("Your profits will be shown soon...")}>Calculate</Button>
-                <h2 className={titleParent}>Profit:</h2>
+                <h2 className={titleH2}>Profit:</h2>
             </div>
         </div>
         </div>
