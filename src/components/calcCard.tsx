@@ -36,20 +36,6 @@ export const CalcCard = () => {
     color: "#4B9CD3"
   });
 
-  let cost: number = 0;
-  let resell: number = 0;
-  let shipping: number = 0;
-  let fees: number = 0;
-
-  function handleCalc(
-    cost: number,
-    resell: number,
-    shipping: number,
-    fees: number
-  ) {
-    return resell - cost - (shipping - fees);
-  }
-
   return (
     <div className={topDiv}>
       <div className={cardParent}>
@@ -57,28 +43,29 @@ export const CalcCard = () => {
         <div>
           <React.Fragment>
             <form>
-              <Input placeholder="Cost" value={cost} />
+              <Input placeholder="Cost" />
               <br />
-              <Input placeholder="Resell" value={resell} />
+              <Input placeholder="Resell" />
               <br />
-              <Input placeholder="Shipping" value={shipping} />
+              <Input placeholder="Shipping" />
               <br />
-              <Input placeholder="Fees" value={fees} />
+              <Input placeholder="Fees" />
+              <br />
+              <Button
+                overrides={{
+                  BaseButton: {
+                    style: {
+                      backgroundColor: "#4B9CD3"
+                    }
+                  }
+                }}
+                onClick={() => alert("Your profits will be shown soon...")}
+              >
+                Calculate
+              </Button>
             </form>
           </React.Fragment>
           <br />
-          <Button
-            overrides={{
-              BaseButton: {
-                style: {
-                  backgroundColor: "#4B9CD3"
-                }
-              }
-            }}
-            onClick={() => alert("Your profits will be shown soon...")}
-          >
-            Calculate
-          </Button>
           <h2 className={titleH2}>Profit:</h2>
         </div>
       </div>
